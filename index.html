@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Restroom Revolution: Cleanliness, Dignity, Access</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for custom theme and Inter font -->
+    <script>
+        tailwind.config = {            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#005f73', // Deep Teal
+                        'secondary': '#0a9396', // Bright Cyan
+                        'accent': '#94d2bd', // Soft Aqua
+                        'background': '#f1faee', // Light Cream/White
+                        'text-dark': '#001219', // Very Dark Blue
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Load Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Apply custom scroll and base styles */
+        body {
+            scroll-behavior: smooth;
+        }
+        .text-shadow-custom {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-background font-sans text-text-dark">
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-primary bg-opacity-95 shadow-lg">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-background tracking-wider">
+                        Re<span class="text-accent">|</span>Solution
+                    </span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#problem" class="text-background hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition duration-150">The Problem</a>
+                        <a href="#impact" class="text-background hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition duration-150">Impact</a>
+                        <a href="#action" class="bg-secondary text-text-dark hover:bg-accent px-3 py-2 rounded-xl text-sm font-bold shadow-md transition duration-300">Take Action</a>
+                    </div>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-background hover:text-accent focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent"
+                        onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="#problem" class="text-background hover:bg-primary block px-3 py-2 rounded-md text-base font-medium">The Problem</a>
+                <a href="#impact" class="text-background hover:bg-primary block px-3 py-2 rounded-md text-base font-medium">Impact</a>
+                <a href="#action" class="bg-secondary text-text-dark hover:bg-accent block px-3 py-2 rounded-xl text-base font-bold transition duration-300 mt-2">Take Action</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-secondary overflow-hidden py-24 sm:py-32 lg:py-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="lg:w-2/3">
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-background mb-4 leading-tight text-shadow-custom">
+                    The Hidden Crisis: <br>The <span class="text-primary">Lack of Clean</span> Public Restrooms.
+                </h1>
+                <p class="mt-6 text-xl text-background font-medium opacity-90">
+                    Clean restrooms are not a luxury—they are a matter of public health, dignity, and accessibility. Join our movement to mandate better standards for public facilities across our communities.
+                </p>
+                <div class="mt-10 flex flex-wrap gap-4">
+                    <a href="#action" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-xl shadow-xl text-text-dark bg-accent hover:bg-background transition duration-300 transform hover:scale-105">
+                        Sign the Petition
+                    </a>
+                    <a href="#learn" class="inline-flex items-center justify-center px-8 py-3 border border-background text-base font-medium rounded-xl text-background hover:bg-primary transition duration-300">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Problem Section -->
+    <section id="problem" class="py-16 sm:py-24 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold text-primary sm:text-5xl">
+                    Why Restroom Cleanliness Matters
+                </h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    It's more than just an inconvenience; it affects public health, economics, and social equity.
+                </p>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Health Risk Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-500 transform hover:-translate-y-1 border-b-4 border-secondary">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-full bg-secondary bg-opacity-20 text-secondary mb-4">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.74 9 12.553C17.176 19.74 21 14.591 21 9c0-1.89-1.155-3.69-2.764-4.706z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-text-dark mb-3">Public Health Hazard</h3>
+                    <p class="text-gray-700">
+                        Unsanitary conditions are breeding grounds for pathogens, contributing to the spread of infectious diseases. Lack of hygiene facilities impacts community well-being directly.
+                    </p>
+                </div>
+
+                <!-- Dignity and Equity Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-500 transform hover:-translate-y-1 border-b-4 border-secondary">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-full bg-secondary bg-opacity-20 text-secondary mb-4">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-text-dark mb-3">Dignity and Equity</h3>
+                    <p class="text-gray-700">
+                        Inadequate restrooms disproportionately affect vulnerable populations, including the elderly, pregnant individuals, people with disabilities, and the unhoused.
+                    </p>
+                </div>
+
+                <!-- Economic Impact Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-500 transform hover:-translate-y-1 border-b-4 border-secondary">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-full bg-secondary bg-opacity-20 text-secondary mb-4">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8V6m0 10v-2"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-text-dark mb-3">Damaged Tourism & Business</h3>
+                    <p class="text-gray-700">
+                        Poor public amenities deter tourists and shoppers. Investing in clean facilities boosts local business confidence and improves the overall quality of life.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact & Solutions Section -->
+    <section id="impact" class="py-16 sm:py-24 bg-primary text-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div class="mb-10 lg:mb-0">
+                    <h2 class="text-4xl font-extrabold text-accent sm:text-5xl">
+                        The Standard We Deserve
+                    </h2>
+                    <p class="mt-4 text-xl opacity-90">
+                        Our advocacy demands a shift from neglect to responsibility. We believe in four core pillars for a better public restroom infrastructure.
+                    </p>
+                    <ul class="mt-8 space-y-4">
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0">
+                                <svg class="h-6 w-6 text-accent" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            </span>
+                            <p class="ml-3 text-lg font-medium">
+                                **Mandatory Daily Cleaning:** Scheduled, documented deep cleaning in all public facilities.
+                            </p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0">
+                                <svg class="h-6 w-6 text-accent" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            </span>
+                            <p class="ml-3 text-lg font-medium">
+                                **Required Supplies:** Consistent stocking of soap, toilet paper, and working hand dryers or paper towels.
+                            </p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0">
+                                <svg class="h-6 w-6 text-accent" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            </span>
+                            <p class="ml-3 text-lg font-medium">
+                                **Accessibility Checks:** Ensuring ADA compliance and safe, well-lit spaces for everyone.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Stats/Visual Element Mockup -->
+                <div class="p-8 bg-secondary rounded-3xl shadow-2xl transform hover:scale-[1.02] transition duration-500">
+                    <div class="text-center">
+                        <p class="text-6xl font-extrabold text-primary">$4.1T</p>
+                        <p class="text-xl mt-2 mb-6 text-background">The global economic cost of sanitation failure annually.</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 text-center">
+                        <div class="bg-primary bg-opacity-80 p-6 rounded-xl">
+                            <p class="text-4xl font-bold text-accent">35%</p>
+                            <p class="mt-1 text-sm text-background">of Americans report avoiding public outings due to restroom fears.</p>
+                        </div>
+                        <div class="bg-primary bg-opacity-80 p-6 rounded-xl">
+                            <p class="text-4xl font-bold text-accent">1 in 4</p>
+                            <p class="mt-1 text-sm text-background">schoolgirls globally miss class due to inadequate facilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Petition Section -->
+    <section id="action" class="py-16 sm:py-24 bg-background">
+        <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-extrabold text-primary sm:text-5xl">
+                Be the Change. Sign the Petition.
+            </h2>
+            <p class="mt-4 text-lg text-gray-600 mb-8">
+                Every signature counts. Help us reach our goal of 100,000 voices demanding better sanitation standards for all public spaces.
+            </p>
+
+            <!-- Petition Form (Mock) -->
+            <form id="petitionForm" class="bg-white p-8 rounded-2xl shadow-2xl space-y-6">
+                <input type="text" placeholder="Full Name" required
+                       class="w-full px-4 py-3 border-2 border-accent rounded-xl focus:ring-secondary focus:border-secondary transition duration-150">
+                <input type="email" placeholder="Email Address" required
+                       class="w-full px-4 py-3 border-2 border-accent rounded-xl focus:ring-secondary focus:border-secondary transition duration-150">
+                <input type="text" placeholder="Your City, State/Province" required
+                       class="w-full px-4 py-3 border-2 border-accent rounded-xl focus:ring-secondary focus:border-secondary transition duration-150">
+
+                <button type="submit"
+                        class="w-full px-6 py-3 text-lg font-extrabold rounded-xl text-text-dark bg-secondary hover:bg-accent transition duration-300 transform hover:scale-[1.02] shadow-lg">
+                    Add My Signature Now
+                </button>
+            </form>
+
+            <p id="thankYouMessage" class="mt-6 text-xl text-primary font-bold hidden">
+                Thank you for your signature! We have registered your support for the Restroom Revolution.
+            </p>
+        </div>
+    </section>
+
+    <!-- JavaScript for form submission and simple interaction -->
+    <script>
+        document.getElementById('petitionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // In a real application, you would send this data to a server (like Firestore) here.
+            
+            // Mock confirmation for the user
+            this.classList.add('hidden');
+            document.getElementById('thankYouMessage').classList.remove('hidden');
+
+            // Optionally reset the form fields after a short delay
+            setTimeout(() => {
+                this.reset();
+                this.classList.remove('hidden');
+                document.getElementById('thankYouMessage').classList.add('hidden');
+            }, 5000); // Message disappears after 5 seconds
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="bg-text-dark text-background mt-12 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Branding -->
+                <div>
+                    <h4 class="text-2xl font-bold tracking-wider mb-4">Re|Solution</h4>
+                    <p class="text-sm text-gray-400">Advocating for better sanitation, health, and dignity in public spaces.</p>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-accent">Navigate</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#problem" class="hover:text-secondary transition duration-150">The Problem</a></li>
+                        <li><a href="#impact" class="hover:text-secondary transition duration-150">Our Solutions</a></li>
+                        <li><a href="#action" class="hover:text-secondary transition duration-150">Take Action</a></li>
+                    </ul>
+                </div>
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-accent">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-secondary transition duration-150">Research & Data (Mock)</a></li>
+                        <li><a href="#" class="hover:text-secondary transition duration-150">Policy Proposals (Mock)</a></li>
+                        <li><a href="#" class="hover:text-secondary transition duration-150">Press Kit (Mock)</a></li>
+                    </ul>
+                </div>
+                <!-- Contact (Mock) -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-accent">Connect</h4>
+                    <p class="text-sm text-gray-400">info@restroom-revolution.org (Mock)</p>
+                    <div class="flex space-x-4 mt-3">
+                        <!-- Mock Social Icons using SVG -->
+                        <a href="#" class="text-background hover:text-secondary"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.873v-6.985h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.564V12h2.775l-.443 2.89h-2.332v6.985C18.343 21.128 22 16.991 22 12z"/></svg></a>
+                        <a href="#" class="text-background hover:text-secondary"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.291 2.768 7.915 6.643 9.15.485.09.661-.209.661-.465 0-.229-.008-.838-.013-1.649-2.695.587-3.262-1.157-3.262-1.157-.44-1.117-1.07-1.413-1.07-1.413-.872-.596.066-.584.066-.584.966.068 1.474.992 1.474.992.865 1.479 2.27 1.052 2.81.803.087-.624.339-1.052.617-1.291-2.158-.246-4.432-1.078-4.432-4.796 0-1.058.376-1.926 1.042-2.597-.104-.245-.453-1.23.099-2.569 0 0 .848-.26 2.77.994.8-.221 1.647-.332 2.5-.336 2.18 0 4.24.78 5.8 2.112 1.95.845 2.97 2.455 2.97 4.258 0 3.72-2.278 4.544-4.442 4.786.35.305.674.908.674 1.83 0 1.32-.012 2.384-.012 2.709 0 .257.173.559.666.464C19.232 19.915 22 16.291 22 12c0-5.523-4.477-10-10-10z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 text-center">
+                <p class="text-sm text-gray-500">&copy; 2024 Restroom Revolution. All rights reserved. Designed for Advocacy.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
